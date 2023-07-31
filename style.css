@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#logo_img {
+    margin: 5px 0 0 20px
+}
+
+#menu_img {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin: 40px 40px 0 0;
+}
+
+#menu_img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#hero_img {
+    max-height: 60vh;
+    max-width: 60vw;
+    margin: 3vh 0 0 10vw;
+}
+
+#hero_section {
+    display: flex;
+    align-items: center;
+}
+
+#hero_img_container,
+#hero_text_container {
+    display: inline-block;
+}
+
+#hero_text_container {
+    margin-left: 80px;
+}
+
+
+#offer_text {
+    background-color: rgb(3, 174, 3);
+    color: white;
+    max-width: fit-content;
+    padding: 5px 25px;
+    margin-bottom: 5px;
+}
+
+#main_text {
+    font-size: 5vw;
+    margin-bottom: 5px;
+}
+
+#sub_text {
+    max-width: 30vw;
+    margin-bottom: 15px;
+}
+
+#explore {
+    background-color: orange;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#explore:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+#hero_section_icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 50px;
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    max-width: 18vw;
+}
+
+#icon:hover {
+    box-shadow: 1px 1px 3px rgb(182, 180, 180);
+    border-radius: 5px;
+}
+
+#icon p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+#icon img {
+    height: 60px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+hr {
+    margin-top: 9vh;
+}
+
+#our_menu {
+    background-color: rgb(3, 174, 3);
+    color: white;
+    max-width: fit-content;
+    padding: 6px;
+    margin: 60px auto 15px;
+}
+
+#explore_our_menu {
+    font-size: 36px;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    max-width: fit-content;
+    max-height: min-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "img1 img1 img2 img3"
+        "img1 img1 img2 img7"
+        "img4 img5 img6 img7";
+    gap: 15px;
+    margin: 25px auto;
+}
+
+#grid img:hover {
+    opacity: 0.9;
+    transform: scale(1.1, 1.1);
+    transition: 10ms;
+}
+
+
+#img1 {
+    grid-area: img1;
+}
+
+#img1 img {
+    width: 575px;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+}
+
+#img5 {
+    grid-area: img5;
+}
+
+#img6 {
+    grid-area: img6;
+}
+
+#img7 {
+    grid-area: img7;
+}
+
+#img7 img {
+    height: 575px;
+}
+
+footer {
+    width: 100vw;
+    background-color: #fff0db;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 30px 20px 100px;
+}
+
+footer p {
+    opacity: 0.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+footer h4 {
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+footer input {
+    border: 1px solid #868484;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+footer input:hover {
+    outline: 1px solid #868484;
+}
+
+#footer_icons span {
+    margin-right: 10px;
+}
+
+#footer_icons img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+footer .logo {
+    margin-left: 30px;
+}
